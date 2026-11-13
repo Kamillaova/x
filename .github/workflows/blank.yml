@@ -1,0 +1,14 @@
+name: meow
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  x86:
+    runs-on: ubuntu-26.04
+    steps:
+      - run: lscpu
+  arm:
+    runs-on: ubuntu-26.04-arm
+    steps:
+      - run: lscpu
